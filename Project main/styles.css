@@ -1,0 +1,195 @@
+body{
+    background-color: #EEE2C7;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #493A26;
+}
+
+#main-container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 90%;
+}
+
+#title-container{
+    display: flex;
+    justify-content: space-around;
+    background-color: #EEE2C7;
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 1.5rem;
+}
+
+#input-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: #EEE2C7;
+    margin: -1rem -5rem;
+}
+
+#form-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: #EEE2C7;
+    margin: -0.5rem 0;
+}
+
+#additional-buttons-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 2rem;
+}
+
+#tasks-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: #F4F1E1;
+    width: 100%;
+}
+
+.task {
+    background-color: #F4F1E1;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+
+.task-position {
+    background-color: #EEE2C7;
+    border-radius: 1.5rem;
+    padding: 0.5rem 0.8rem;
+    margin: 0.5rem 1rem 0.5rem 0;
+}
+
+h3{
+    text-align: center;
+}
+
+.button-style{
+    border: none;
+    padding: 0.25rem 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+#add-button{
+    color: white;
+    background-color: #74C980;
+}
+
+#add-button:hover{
+    background-color: #97d39e;
+}
+
+#delete-button{
+    color: white;
+    background-color: #76b2b9;
+}
+
+#delete-button:hover{
+    background-color: #8bc6cc;
+}
+
+#clear-button{
+    color: white;
+    background-color: #d69191;
+}
+
+#clear-button:hover{
+    background-color: #dda6a6;
+}
+
+footer{
+    text-align: center;
+    margin: 1rem 0;
+}
+
+a{
+    text-decoration: none;
+    color: #493A26;
+}
+
+.up-button, .down-button, .edit-button, .delete-task-button{
+    display: none;
+    margin: 0;
+    padding: 0.2rem 0.2rem;
+    background-color: rgb(206, 206, 206);
+    cursor: pointer;
+    font-weight: 700;
+    color: rgb(92, 92, 92);
+    background-color: rgb(175, 207, 236);
+}
+
+.delete-task-button{
+    color: red;
+}
+.up-button:hover, .down-button:hover, .edit-button:hover, .delete-task-button:hover{
+    background-color: rgb(137, 180, 221);
+}
+
+
+
+#edit-box-bg{
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.3);
+}
+
+#edit-box{
+    background-color: #fefefe;
+    margin: 10% auto; 
+    padding: 1rem;
+    border: 1px solid #888;
+    width: 30%; 
+    text-align: center;
+}
+
+#edit-box-close{
+    color: #aaa;
+    float: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+#edit-box-close:hover{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#ok-edit-button, #cancel-edit-button{
+    margin: 1rem;
+}
+
+#ok-edit-button:hover, #cancel-edit-button:hover{
+    background-color: #c0d6f0;
+}
+
+#cancel-edit-button:hover{
+    background-color: #f0c0c0;
+}
